@@ -1,11 +1,16 @@
 <!DOCTYPE html >
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>assignment-03</title>
+     <title>legal-project</title>
      <!-- googel font -->
-
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
      <!-- font-awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- tailwind and daisyui cdn-->
@@ -17,42 +22,91 @@
      <script>
           tailwind.config = {
             theme: {
+               fontFamily: {
+                    'secendary': ['EB Garamond, serif'],
+               },
               extend: {
-                colors: {
-                  clifford: '#da373d',
-                }
+               
               }
             }
           }
      </script>
+     <style>
+          /* .poppins{
+               font-family: 'Poppins', sans-serif;
+          }
+          .secend-font{
+               font-family: 'EB Garamond', serif;
+          } */
+     </style>
 </head>
 <body>
      
 <!--00 header aection start -->
      <header>
-          <!-- navbar start -->
-          <nav>
+          <div class="container mx-auto pb-10">
+               <!-- 01 navber-->
+               <div class="navbar py-8">
+                    <div class="navbar-start">
+                         <div class="dropdown">
+                              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                              </label>
+                              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#">Services <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                                   <li><a href="#">Cases <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                                   <li><a href="#">Blog <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                                   <li><a href="#">Contact Us <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                              </ul>
+                         </div>
 
-          </nav>
-          <!-- navbar end -->
+                         <a class="btn btn-ghost normal-case text-xl"><img src="images/logo2.png" alt=""></a>
+                    </div>
+                    <!-- 01 -->
+                    <div class="navbar-center hidden lg:flex">
+                         <ul class="flex gap-8">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Services <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                              <li><a href="#">Cases <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                              <li><a href="#">Blog <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+                              <li><a href="#">Contact Us <i class="text-[#707070] fa-solid fa-angle-right"></i></a></li>
+
+                         </ul>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="navbar-end">
+                         <a class="btn text-sm  bg-[#B68C5A] text-[#FFF]">Free Consultation</a>
+                    </div>
+               </div>
 
 
-          <!-- banner start -->
-          <div class="banner">
+               
+               <!-- 02 banner -->
+               <div class="hero h-[80vh] rounded-lg" style="background-image: url('/images/banner.png')">
+                    <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
 
+                    <div class="hero-content text-center  text-neutral-content">
+                         <div class="max-w-lg">
+                              <h1 class="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold break-words">We Provide Effective Legal Solutions</h1>
+                              <p class="mb-5 text-sm break-words">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                              
+                              <div class="flex md:flex-nowrap flex-wrap justify-center items-end">
+                                   <div class=" sm:w-72 w-40 sm:mr-4 mr-2">
+                                     <input type="text" id="footer-field" name="footer-field" placeholder="Search your services" class="w-full bg-white  rounded  border-[#B68C5A] focus:ring-2 focus:bg-transparent focus:ring-[#B68C5A] focus:border-[#B68C5A] text-base outline-none text-[#B68C5A] py-1 px-3 leading-8 transition-colors  ease-in-out">
+                                   </div>
+                                   <button class="inline-flex text-white bg-[#B68C5A] border-0 py-2 px-6 focus:outline-none hover:bg-[#8b6a40] rounded">Search</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
           </div>
-          <!-- banner end -->
      </header>
 <!--00 header aection end -->
 
 
-<!-- main section start -->
-     <main>
-          <!--01   section start-->
-               <section>
 
-               </section>
-          <!--01   section end-->
 
 
           <!--02   section start -->
